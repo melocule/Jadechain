@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const Footer = () => {
   return (
@@ -75,15 +84,21 @@ const Footer = () => {
               © {new Date().getFullYear()} Jadechain Technologies, Inc. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-muted-foreground">
-              <Link to="/legal" className="hover:text-primary transition-colors">
-                Legal
-              </Link>
-              <Link to="/privacy" className="hover:text-primary transition-colors">
-                Privacy
-              </Link>
-              <Link to="/terms" className="hover:text-primary transition-colors">
-                Terms
-              </Link>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="link" className="text-sm text-muted-foreground hover:text-primary transition-colors p-0 h-auto">
+                    Legal & Disclaimers
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle>Legal & Disclaimers</DialogTitle>
+                    <DialogDescription className="text-left">
+                      USSC is a fiat‑referenced digital asset intended for business use. Access and availability may vary by jurisdiction and by partner coverage. Nothing on this site constitutes an offer to sell securities or financial instruments. Use of our services is subject to applicable terms, partner policies, and compliance reviews.
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <p className="text-xs text-muted-foreground mt-4 text-center md:text-left">

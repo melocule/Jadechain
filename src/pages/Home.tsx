@@ -41,7 +41,7 @@ const Home = () => {
                 <Link to="/accept">Accept USSC</Link>
               </Button>
               <Button size="lg" variant="ghost" asChild>
-                <Link to="/contact">Talk to Sales</Link>
+                <Link to="/about#contact">Talk to Sales</Link>
               </Button>
             </div>
           </div>
@@ -139,7 +139,7 @@ const Home = () => {
                 <Link to="/buy">Buy USSC</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
-                <Link to="/contact">Contact Sales</Link>
+                <Link to="/about#contact">Contact Sales</Link>
               </Button>
             </div>
           </Card>

@@ -84,7 +84,8 @@ const About = () => {
       </section>
 
       {/* Contact */}
-      <section className="py-20 bg-background">
+      {/** biome-ignore lint/correctness/useUniqueElementIds: <Only need a fixed ID here> */}
+      <section id="contact" className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

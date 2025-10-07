@@ -51,7 +51,7 @@ const Navbar = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/contact">Contact Sales</Link>
+              <Link to="mailto:sales@jadechain.io">Contact Sales</Link>
             </Button>
             <Button size="sm" className="bg-gradient-jade border-0" asChild>
               <Link to="/buy">Buy USSC</Link>
@@ -63,6 +63,7 @@ const Navbar = () => {
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
+            type="button"
           >
             {mobileMenuOpen ? (
               <X className="h-6 w-6 text-foreground" />
@@ -91,7 +92,7 @@ const Navbar = () => {
             ))}
             <div className="pt-4 space-y-2">
               <Button variant="ghost" size="sm" className="w-full" asChild>
-                <Link to="/contact">Contact Sales</Link>
+                <Link to="mailto:sales@jadechain.io">Contact Sales</Link>
               </Button>
               <Button size="sm" className="w-full bg-gradient-jade border-0" asChild>
                 <Link to="/buy">Buy USSC</Link>

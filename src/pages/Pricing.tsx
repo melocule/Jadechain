@@ -122,9 +122,9 @@ const Pricing = () => {
                 "SDK access",
                 "Documentation",
                 "Partner network"
-              ].map((feature, index) => (
+              ].map((feature) => (
                 <div 
-                  key={index}
+                  key={feature}
                   className="flex items-center space-x-3 p-4 bg-background rounded-lg border border-border"
                 >
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
@@ -164,9 +164,9 @@ const Pricing = () => {
                   q: "Can I get a custom pricing plan?",
                   a: "Yes. We work with each business to create pricing that fits their corridors, volumes, and integration requirements."
                 }
-              ].map((item, index) => (
+              ].map((item) => (
                 <Card 
-                  key={index}
+                  key={item.q}
                   className="p-6 border-border hover:shadow-jade transition-all duration-300"
                 >
                   <h3 className="text-lg font-bold text-foreground mb-2">{item.q}</h3>

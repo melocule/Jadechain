@@ -9,11 +9,12 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "USSC", path: "/ussc" },
+    { name: "Merchants", path: "/merchants" },
     { name: "Developers", path: "/developers" },
     { name: "Compliance", path: "/compliance" },
     { name: "Pricing", path: "/pricing" },
     { name: "About", path: "/about" },
+    { name: "FAQ", path: "/faq" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

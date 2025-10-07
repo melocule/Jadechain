@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Shield, Zap, Globe, Code, CheckCircle, Clock, DollarSign, Lock } from "lucide-react";
+import { Shield, Zap, Globe, Code, CheckCircle, Clock, DollarSign, Lock, Layers, Wallet, TrendingUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-bg.jpg";
@@ -120,6 +120,168 @@ const Home = () => {
                 BSA/AML controls and reporting workflows for regulated businesses. Work with a registered MSB that understands compliance.
               </p>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Features */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-4">Key Features</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Built for the demands of modern commerce
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <Card className="p-6 border-border hover:shadow-jade transition-all duration-300">
+              <DollarSign className="h-10 w-10 text-primary mb-4" />
+              <h3 className="text-lg font-bold text-foreground mb-2">Dollar-denominated</h3>
+              <p className="text-sm text-muted-foreground">
+                Price stability and accounting simplicity for your business
+              </p>
+            </Card>
+
+            <Card className="p-6 border-border hover:shadow-jade transition-all duration-300">
+              <Zap className="h-10 w-10 text-primary mb-4" />
+              <h3 className="text-lg font-bold text-foreground mb-2">Fast & final</h3>
+              <p className="text-sm text-muted-foreground">
+                On-chain settlement with auditable transaction history
+              </p>
+            </Card>
+
+            <Card className="p-6 border-border hover:shadow-jade transition-all duration-300">
+              <Layers className="h-10 w-10 text-primary mb-4" />
+              <h3 className="text-lg font-bold text-foreground mb-2">Multi-chain support</h3>
+              <p className="text-sm text-muted-foreground">
+                Cross-chain bridges for reach and redundancy
+              </p>
+            </Card>
+
+            <Card className="p-6 border-border hover:shadow-jade transition-all duration-300">
+              <Wallet className="h-10 w-10 text-primary mb-4" />
+              <h3 className="text-lg font-bold text-foreground mb-2">Interoperable</h3>
+              <p className="text-sm text-muted-foreground">
+                Works with major wallets and payment partners
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* For Merchants */}
+      <section className="py-20 bg-card border-y border-border">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Designed for <span className="bg-gradient-jade bg-clip-text text-transparent">Merchants</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                USSC is built for merchants who source globally and sell into the U.S. Use it to pay suppliers, 
+                accept customer payments, and sweep balances to bank accounts through off-ramp partners.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <TrendingUp className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Faster settlement</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Get paid faster than international wires
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Lower overhead</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Reduce operational costs vs. legacy correspondent banking
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <Shield className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Chargeback-resilient</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Strong fraud controls via trusted partners
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Zap className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Real-time payouts</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Automated reconciliation exports
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-foreground mb-4">How It Works</h2>
+              <p className="text-lg text-muted-foreground">
+                Simple, seamless payment flow from customer to merchant
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  step: "1",
+                  title: "Customer initiates payment",
+                  description: "Customer chooses 'Pay with USSC' or buys USSC via a checkout link"
+                },
+                {
+                  step: "2",
+                  title: "Partner processes transaction",
+                  description: "Our partner handles KYC, payment processing, and token delivery"
+                },
+                {
+                  step: "3",
+                  title: "On-chain settlement",
+                  description: "Funds settle on-chain; you receive USSC to your wallet"
+                },
+                {
+                  step: "4",
+                  title: "Off-ramp when ready",
+                  description: "Convert to fiat through a connected partner or keep balances in USSC"
+                }
+              ].map((item, index) => (
+                <Card 
+                  key={item.step} 
+                  className="p-6 border-border hover:shadow-jade transition-all duration-300 animate-slide-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-jade flex items-center justify-center text-white font-bold text-xl">
+                      {item.step}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
+                      <p className="text-muted-foreground">{item.description}</p>
+                    </div>
+                  </div>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>

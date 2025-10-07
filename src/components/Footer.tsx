@@ -29,8 +29,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Product</h4>
             <nav className="flex flex-col space-y-2">
-              <Link to="/ussc" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                USSC Stablecoin
+              <Link to="/merchants" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Merchants
               </Link>
               <Link to="/developers" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Developers
@@ -50,6 +50,9 @@ const Footer = () => {
               </Link>
               <Link to="/compliance" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Compliance
+              </Link>
+              <Link to="/faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                FAQ
               </Link>
               <a href="mailto:hello@jadechain.io" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Contact
